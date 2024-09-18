@@ -30,7 +30,7 @@
 # Copy-Item -Path "C:\Users\Administrator\.ssh\id_rsa" -Destination "C:\Code\CB\Docker\PowerShell\Windows\configs\id_rsa"
 
 
-Set-Location C:\code\CB\Docker\PowerShell\Windows\Docker-Simple-Testing-Scripts
+Set-Location C:\code\Docker\PowerShell\Windows\Docker-Simple-Testing-Scripts
 
 
 # Generate a timestamp
