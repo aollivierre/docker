@@ -1,0 +1,5 @@
+# Start with Windows Server Core
+# Use the latest Windows Server Core image
+FROM my_pwsh_image_20240626195237:latest
+
+RUN pwsh -Command "Install-Module -Name Microsoft.Graph.Authentication -Scope Allusers -Force"

@@ -1,0 +1,44 @@
+# Start with Windows Server Core
+# Use the latest Windows Server Core image
+FROM mcr.microsoft.com/windows/servercore:ltsc2022
+# Set shell to PowerShell
+SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
+# Install PowerShell Core
+# Copy installation script
+COPY ["./install-pwsh.ps1", "C:/install-pwsh.ps1"]
+# Verify the script was copied and run it
+RUN if (Test-Path C:/install-pwsh.ps1) { \
+        Write-Host "install-pwsh.ps1 found, running script..."; \
+        C:/install-pwsh.ps1; \
+    } else { \
+        Write-Host "install-pwsh.ps1 not found!"; \
+        exit 1; \
+    }
+# Set PowerShell Core as the default shell
+SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
+# Verify installation
+RUN $PSVersionTable
+# Set the default command
+CMD ["pwsh"]
+# Get OS Product Name
+RUN (Get-ItemProperty -Path 'HKLM:\Software\Microsoft\Windows NT\CurrentVersion').ProductName
+# Install Oh My Posh
+RUN pwsh -Command "Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.dev/install.ps1'))"
+
+# Add Oh My Posh to the PATH
+RUN $env:Path += ';C:\\Users\\ContainerAdministrator\\AppData\\Local\\Programs\\oh-my-posh\\bin'; \
+    [Environment]::SetEnvironmentVariable('Path', $env:Path, [EnvironmentVariableTarget]::Machine)
+
+# Verify PowerShell version and Oh My Posh installation
+RUN $PSVersionTable.PSVersion; \
+    oh-my-posh --version
+# Install PowerShell modules Terminal-Icons and z
+RUN pwsh -Command "Install-Module -Name Terminal-Icons -Scope Allusers -Force"
+RUN pwsh -Command "Install-Module -Name z -Scope Allusers -Force"
+RUN pwsh -Command "Install-Module -Name Microsoft.Graph.Authentication -Scope Allusers -Force"
+
+# Create the necessary directory for the PowerShell profile
+RUN New-Item -ItemType Directory -Force -Path "C:\\Users\\ContainerAdministrator\\Documents\\PowerShell"
+
+# Copy the PowerShell profile to the default path for PowerShell Core
+COPY Microsoft.PowerShell_profile.ps1 C:\\Users\\ContainerAdministrator\\Documents\\PowerShell\\Microsoft.PowerShell_profile.ps1

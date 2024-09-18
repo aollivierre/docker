@@ -1,0 +1,9 @@
+# Start with Windows Server Core as the base image
+FROM mcr.microsoft.com/windows/servercore:ltsc2022 AS base
+
+# Set shell to PowerShell and copy necessary files in one layer
+SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
+COPY ["install-pwsh.ps1", "C:/"]
+
+# Install PowerShell Core, run setup, and clean up in one layer
+RUN C:/install-pwsh.ps1;

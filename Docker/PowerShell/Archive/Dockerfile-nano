@@ -1,0 +1,31 @@
+# escape=`
+
+# Use PowerShell image as an installer container to extract PowerShell
+FROM mcr.microsoft.com/powershell:nanoserver AS installer-env
+
+# Set environment variable to disable telemetry
+ENV POWERSHELL_TELEMETRY_OPTOUT="1"
+
+# Set PowerShell as the shell
+SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
+
+# Create directory, download, and expand the PowerShell package directly using a hard-coded URL
+RUN New-Item -ItemType Directory /powershell -Force; `
+    Invoke-WebRequest -Uri "https://github.com/PowerShell/PowerShell/releases/download/v7.4.2/PowerShell-7.4.2-win-x64.zip" -OutFile /powershell/powershell.zip; `
+    Expand-Archive /powershell/powershell.zip -DestinationPath /powershell
+
+# Start the final image build based on Nano Server
+FROM mcr.microsoft.com/windows/nanoserver:ltsc2022
+
+# Copy PowerShell Core from the installer environment to the final image
+COPY --from=installer-env ["/powershell/", "C:/Program Files/PowerShell"]
+
+# Update the PATH environment variable to include PowerShell path
+ENV PATH="C:/Program Files/PowerShell;$PATH" `
+    POWERSHELL_TELEMETRY_OPTOUT="0"
+
+# Change user context to ContainerUser
+USER ContainerUser
+
+# Set the default command to PowerShell Core
+CMD ["pwsh.exe"]
