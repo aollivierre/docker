@@ -1,0 +1,954 @@
+[
+  {
+    "Name": "AggregatorHost",
+    "Id": 5088
+  },
+  {
+    "Name": "ApplicationFrameHost",
+    "Id": 5624
+  },
+  {
+    "Name": "AzureArcSysTray",
+    "Id": 10480
+  },
+  {
+    "Name": "chrome",
+    "Id": 12168
+  },
+  {
+    "Name": "chrome",
+    "Id": 13536
+  },
+  {
+    "Name": "chrome",
+    "Id": 14124
+  },
+  {
+    "Name": "chrome",
+    "Id": 14176
+  },
+  {
+    "Name": "chrome",
+    "Id": 14580
+  },
+  {
+    "Name": "chrome",
+    "Id": 14640
+  },
+  {
+    "Name": "chrome",
+    "Id": 14940
+  },
+  {
+    "Name": "chrome",
+    "Id": 15000
+  },
+  {
+    "Name": "chrome",
+    "Id": 16612
+  },
+  {
+    "Name": "chrome",
+    "Id": 16916
+  },
+  {
+    "Name": "chrome",
+    "Id": 16984
+  },
+  {
+    "Name": "cmd",
+    "Id": 13636
+  },
+  {
+    "Name": "Code",
+    "Id": 4220
+  },
+  {
+    "Name": "Code",
+    "Id": 6176
+  },
+  {
+    "Name": "Code",
+    "Id": 6744
+  },
+  {
+    "Name": "Code",
+    "Id": 7724
+  },
+  {
+    "Name": "Code",
+    "Id": 7772
+  },
+  {
+    "Name": "Code",
+    "Id": 7848
+  },
+  {
+    "Name": "Code",
+    "Id": 7936
+  },
+  {
+    "Name": "Code",
+    "Id": 7976
+  },
+  {
+    "Name": "Code",
+    "Id": 8188
+  },
+  {
+    "Name": "Code",
+    "Id": 8504
+  },
+  {
+    "Name": "Code",
+    "Id": 8552
+  },
+  {
+    "Name": "Code",
+    "Id": 8664
+  },
+  {
+    "Name": "Code",
+    "Id": 8808
+  },
+  {
+    "Name": "Code",
+    "Id": 8852
+  },
+  {
+    "Name": "Code",
+    "Id": 8892
+  },
+  {
+    "Name": "Code",
+    "Id": 9008
+  },
+  {
+    "Name": "Code",
+    "Id": 9876
+  },
+  {
+    "Name": "Code",
+    "Id": 10064
+  },
+  {
+    "Name": "Code",
+    "Id": 10576
+  },
+  {
+    "Name": "Code",
+    "Id": 12476
+  },
+  {
+    "Name": "Code",
+    "Id": 18100
+  },
+  {
+    "Name": "com.docker.backend",
+    "Id": 11976
+  },
+  {
+    "Name": "com.docker.backend",
+    "Id": 12764
+  },
+  {
+    "Name": "com.docker.build",
+    "Id": 14300
+  },
+  {
+    "Name": "com.docker.dev-envs",
+    "Id": 13660
+  },
+  {
+    "Name": "conhost",
+    "Id": 5492
+  },
+  {
+    "Name": "conhost",
+    "Id": 10356
+  },
+  {
+    "Name": "conhost",
+    "Id": 10508
+  },
+  {
+    "Name": "conhost",
+    "Id": 10736
+  },
+  {
+    "Name": "conhost",
+    "Id": 10780
+  },
+  {
+    "Name": "conhost",
+    "Id": 11764
+  },
+  {
+    "Name": "conhost",
+    "Id": 11788
+  },
+  {
+    "Name": "conhost",
+    "Id": 11900
+  },
+  {
+    "Name": "conhost",
+    "Id": 11924
+  },
+  {
+    "Name": "conhost",
+    "Id": 11980
+  },
+  {
+    "Name": "conhost",
+    "Id": 12248
+  },
+  {
+    "Name": "conhost",
+    "Id": 13468
+  },
+  {
+    "Name": "conhost",
+    "Id": 15140
+  },
+  {
+    "Name": "conhost",
+    "Id": 15520
+  },
+  {
+    "Name": "conhost",
+    "Id": 16080
+  },
+  {
+    "Name": "conhost",
+    "Id": 16280
+  },
+  {
+    "Name": "conhost",
+    "Id": 16340
+  },
+  {
+    "Name": "conhost",
+    "Id": 16628
+  },
+  {
+    "Name": "conhost",
+    "Id": 16664
+  },
+  {
+    "Name": "conhost",
+    "Id": 16848
+  },
+  {
+    "Name": "conhost",
+    "Id": 17080
+  },
+  {
+    "Name": "conhost",
+    "Id": 17112
+  },
+  {
+    "Name": "conhost",
+    "Id": 17208
+  },
+  {
+    "Name": "conhost",
+    "Id": 17664
+  },
+  {
+    "Name": "conhost",
+    "Id": 17760
+  },
+  {
+    "Name": "conhost",
+    "Id": 18064
+  },
+  {
+    "Name": "csrss",
+    "Id": 1184
+  },
+  {
+    "Name": "csrss",
+    "Id": 3328
+  },
+  {
+    "Name": "csrss",
+    "Id": 10404
+  },
+  {
+    "Name": "ctfmon",
+    "Id": 5668
+  },
+  {
+    "Name": "dllhost",
+    "Id": 5356
+  },
+  {
+    "Name": "dllhost",
+    "Id": 10092
+  },
+  {
+    "Name": "dllhost",
+    "Id": 12592
+  },
+  {
+    "Name": "dllhost",
+    "Id": 18332
+  },
+  {
+    "Name": "docker",
+    "Id": 11704
+  },
+  {
+    "Name": "docker",
+    "Id": 15456
+  },
+  {
+    "Name": "docker",
+    "Id": 15692
+  },
+  {
+    "Name": "docker",
+    "Id": 16524
+  },
+  {
+    "Name": "docker",
+    "Id": 16656
+  },
+  {
+    "Name": "docker",
+    "Id": 18024
+  },
+  {
+    "Name": "docker",
+    "Id": 18264
+  },
+  {
+    "Name": "docker",
+    "Id": 18304
+  },
+  {
+    "Name": "Docker Desktop",
+    "Id": 11640
+  },
+  {
+    "Name": "Docker Desktop",
+    "Id": 13788
+  },
+  {
+    "Name": "Docker Desktop",
+    "Id": 15592
+  },
+  {
+    "Name": "Docker Desktop",
+    "Id": 16256
+  },
+  {
+    "Name": "dwm",
+    "Id": 1724
+  },
+  {
+    "Name": "dwm",
+    "Id": 5216
+  },
+  {
+    "Name": "Everything",
+    "Id": 4152
+  },
+  {
+    "Name": "Everything",
+    "Id": 10148
+  },
+  {
+    "Name": "explorer",
+    "Id": 6436
+  },
+  {
+    "Name": "fontdrvhost",
+    "Id": 1616
+  },
+  {
+    "Name": "fontdrvhost",
+    "Id": 4864
+  },
+  {
+    "Name": "fontdrvhost",
+    "Id": 9984
+  },
+  {
+    "Name": "GitHubDesktop",
+    "Id": 11744
+  },
+  {
+    "Name": "GitHubDesktop",
+    "Id": 12932
+  },
+  {
+    "Name": "GitHubDesktop",
+    "Id": 13400
+  },
+  {
+    "Name": "GitHubDesktop",
+    "Id": 13916
+  },
+  {
+    "Name": "gvproxy",
+    "Id": 11280
+  },
+  {
+    "Name": "Idle",
+    "Id": 0
+  },
+  {
+    "Name": "LogonUI",
+    "Id": 2780
+  },
+  {
+    "Name": "LsaIso",
+    "Id": 1456
+  },
+  {
+    "Name": "lsass",
+    "Id": 1464
+  },
+  {
+    "Name": "MoUsoCoreWorker",
+    "Id": 3860
+  },
+  {
+    "Name": "msdtc",
+    "Id": 3088
+  },
+  {
+    "Name": "MsMpEng",
+    "Id": 4284
+  },
+  {
+    "Name": "msrdc",
+    "Id": 13628
+  },
+  {
+    "Name": "msrdc",
+    "Id": 14848
+  },
+  {
+    "Name": "msrdc",
+    "Id": 15344
+  },
+  {
+    "Name": "msrdc",
+    "Id": 16892
+  },
+  {
+    "Name": "NisSrv",
+    "Id": 6140
+  },
+  {
+    "Name": "Podman Desktop",
+    "Id": 13036
+  },
+  {
+    "Name": "Podman Desktop",
+    "Id": 14700
+  },
+  {
+    "Name": "Podman Desktop",
+    "Id": 14984
+  },
+  {
+    "Name": "Podman Desktop",
+    "Id": 16084
+  },
+  {
+    "Name": "pwsh",
+    "Id": 10076
+  },
+  {
+    "Name": "pwsh",
+    "Id": 10472
+  },
+  {
+    "Name": "pwsh",
+    "Id": 10500
+  },
+  {
+    "Name": "pwsh",
+    "Id": 11456
+  },
+  {
+    "Name": "rdpclip",
+    "Id": 6448
+  },
+  {
+    "Name": "Registry",
+    "Id": 324
+  },
+  {
+    "Name": "RuntimeBroker",
+    "Id": 6564
+  },
+  {
+    "Name": "RuntimeBroker",
+    "Id": 7088
+  },
+  {
+    "Name": "RuntimeBroker",
+    "Id": 7340
+  },
+  {
+    "Name": "SearchApp",
+    "Id": 5804
+  },
+  {
+    "Name": "Secure System",
+    "Id": 232
+  },
+  {
+    "Name": "services",
+    "Id": 1436
+  },
+  {
+    "Name": "sihost",
+    "Id": 1196
+  },
+  {
+    "Name": "smss",
+    "Id": 1064
+  },
+  {
+    "Name": "spoolsv",
+    "Id": 4060
+  },
+  {
+    "Name": "StartMenuExperienceHost",
+    "Id": 6988
+  },
+  {
+    "Name": "svchost",
+    "Id": 1188
+  },
+  {
+    "Name": "svchost",
+    "Id": 1212
+  },
+  {
+    "Name": "svchost",
+    "Id": 1240
+  },
+  {
+    "Name": "svchost",
+    "Id": 1244
+  },
+  {
+    "Name": "svchost",
+    "Id": 1588
+  },
+  {
+    "Name": "svchost",
+    "Id": 1604
+  },
+  {
+    "Name": "svchost",
+    "Id": 1656
+  },
+  {
+    "Name": "svchost",
+    "Id": 1692
+  },
+  {
+    "Name": "svchost",
+    "Id": 1708
+  },
+  {
+    "Name": "svchost",
+    "Id": 1752
+  },
+  {
+    "Name": "svchost",
+    "Id": 1820
+  },
+  {
+    "Name": "svchost",
+    "Id": 1852
+  },
+  {
+    "Name": "svchost",
+    "Id": 1880
+  },
+  {
+    "Name": "svchost",
+    "Id": 1916
+  },
+  {
+    "Name": "svchost",
+    "Id": 1976
+  },
+  {
+    "Name": "svchost",
+    "Id": 1988
+  },
+  {
+    "Name": "svchost",
+    "Id": 2028
+  },
+  {
+    "Name": "svchost",
+    "Id": 2092
+  },
+  {
+    "Name": "svchost",
+    "Id": 2116
+  },
+  {
+    "Name": "svchost",
+    "Id": 2124
+  },
+  {
+    "Name": "svchost",
+    "Id": 2184
+  },
+  {
+    "Name": "svchost",
+    "Id": 2212
+  },
+  {
+    "Name": "svchost",
+    "Id": 2264
+  },
+  {
+    "Name": "svchost",
+    "Id": 2272
+  },
+  {
+    "Name": "svchost",
+    "Id": 2320
+  },
+  {
+    "Name": "svchost",
+    "Id": 2356
+  },
+  {
+    "Name": "svchost",
+    "Id": 2372
+  },
+  {
+    "Name": "svchost",
+    "Id": 2424
+  },
+  {
+    "Name": "svchost",
+    "Id": 2464
+  },
+  {
+    "Name": "svchost",
+    "Id": 2500
+  },
+  {
+    "Name": "svchost",
+    "Id": 2548
+  },
+  {
+    "Name": "svchost",
+    "Id": 2596
+  },
+  {
+    "Name": "svchost",
+    "Id": 2640
+  },
+  {
+    "Name": "svchost",
+    "Id": 2768
+  },
+  {
+    "Name": "svchost",
+    "Id": 2896
+  },
+  {
+    "Name": "svchost",
+    "Id": 2964
+  },
+  {
+    "Name": "svchost",
+    "Id": 3112
+  },
+  {
+    "Name": "svchost",
+    "Id": 3196
+  },
+  {
+    "Name": "svchost",
+    "Id": 3204
+  },
+  {
+    "Name": "svchost",
+    "Id": 3212
+  },
+  {
+    "Name": "svchost",
+    "Id": 3300
+  },
+  {
+    "Name": "svchost",
+    "Id": 3452
+  },
+  {
+    "Name": "svchost",
+    "Id": 3460
+  },
+  {
+    "Name": "svchost",
+    "Id": 3536
+  },
+  {
+    "Name": "svchost",
+    "Id": 3568
+  },
+  {
+    "Name": "svchost",
+    "Id": 3576
+  },
+  {
+    "Name": "svchost",
+    "Id": 3712
+  },
+  {
+    "Name": "svchost",
+    "Id": 3804
+  },
+  {
+    "Name": "svchost",
+    "Id": 3836
+  },
+  {
+    "Name": "svchost",
+    "Id": 3908
+  },
+  {
+    "Name": "svchost",
+    "Id": 3968
+  },
+  {
+    "Name": "svchost",
+    "Id": 3996
+  },
+  {
+    "Name": "svchost",
+    "Id": 4104
+  },
+  {
+    "Name": "svchost",
+    "Id": 4112
+  },
+  {
+    "Name": "svchost",
+    "Id": 4144
+  },
+  {
+    "Name": "svchost",
+    "Id": 4160
+  },
+  {
+    "Name": "svchost",
+    "Id": 4168
+  },
+  {
+    "Name": "svchost",
+    "Id": 4228
+  },
+  {
+    "Name": "svchost",
+    "Id": 4240
+  },
+  {
+    "Name": "svchost",
+    "Id": 4244
+  },
+  {
+    "Name": "svchost",
+    "Id": 4488
+  },
+  {
+    "Name": "svchost",
+    "Id": 4704
+  },
+  {
+    "Name": "svchost",
+    "Id": 4760
+  },
+  {
+    "Name": "svchost",
+    "Id": 5284
+  },
+  {
+    "Name": "svchost",
+    "Id": 6180
+  },
+  {
+    "Name": "svchost",
+    "Id": 7120
+  },
+  {
+    "Name": "svchost",
+    "Id": 9180
+  },
+  {
+    "Name": "svchost",
+    "Id": 18296
+  },
+  {
+    "Name": "System",
+    "Id": 4
+  },
+  {
+    "Name": "taskhostw",
+    "Id": 5028
+  },
+  {
+    "Name": "TextInputHost",
+    "Id": 6960
+  },
+  {
+    "Name": "vmcompute",
+    "Id": 5344
+  },
+  {
+    "Name": "vmmem",
+    "Id": 8544
+  },
+  {
+    "Name": "vmms",
+    "Id": 2624
+  },
+  {
+    "Name": "vmwp",
+    "Id": 8784
+  },
+  {
+    "Name": "VSSVC",
+    "Id": 2252
+  },
+  {
+    "Name": "win-sshproxy",
+    "Id": 17192
+  },
+  {
+    "Name": "wininit",
+    "Id": 1292
+  },
+  {
+    "Name": "winlogon",
+    "Id": 3164
+  },
+  {
+    "Name": "winlogon",
+    "Id": 5808
+  },
+  {
+    "Name": "wlms",
+    "Id": 4204
+  },
+  {
+    "Name": "WmiPrvSE",
+    "Id": 15160
+  },
+  {
+    "Name": "wsl",
+    "Id": 5892
+  },
+  {
+    "Name": "wsl",
+    "Id": 10080
+  },
+  {
+    "Name": "wsl",
+    "Id": 10116
+  },
+  {
+    "Name": "wsl",
+    "Id": 10316
+  },
+  {
+    "Name": "wsl",
+    "Id": 10628
+  },
+  {
+    "Name": "wsl",
+    "Id": 11504
+  },
+  {
+    "Name": "wsl",
+    "Id": 12112
+  },
+  {
+    "Name": "wsl",
+    "Id": 15372
+  },
+  {
+    "Name": "wsl",
+    "Id": 15784
+  },
+  {
+    "Name": "wslhost",
+    "Id": 11360
+  },
+  {
+    "Name": "wslhost",
+    "Id": 11652
+  },
+  {
+    "Name": "wslhost",
+    "Id": 14652
+  },
+  {
+    "Name": "wslhost",
+    "Id": 14900
+  },
+  {
+    "Name": "wslhost",
+    "Id": 15048
+  },
+  {
+    "Name": "wslhost",
+    "Id": 15652
+  },
+  {
+    "Name": "wslhost",
+    "Id": 15832
+  },
+  {
+    "Name": "wslhost",
+    "Id": 16464
+  },
+  {
+    "Name": "wslhost",
+    "Id": 16896
+  },
+  {
+    "Name": "wslhost",
+    "Id": 16992
+  },
+  {
+    "Name": "wslhost",
+    "Id": 17092
+  },
+  {
+    "Name": "wslhost",
+    "Id": 17128
+  },
+  {
+    "Name": "wslhost",
+    "Id": 17404
+  },
+  {
+    "Name": "wslrelay",
+    "Id": 14084
+  },
+  {
+    "Name": "wslservice",
+    "Id": 4356
+  },
+  {
+    "Name": "WUDFHost",
+    "Id": 18084
+  }
+]

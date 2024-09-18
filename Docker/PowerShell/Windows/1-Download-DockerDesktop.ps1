@@ -1,0 +1,1 @@
+#simply download Docker Desktop from https://www.docker.com/products/docker-desktop and uncheck use WSL2 during install

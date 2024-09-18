@@ -1,0 +1,21 @@
+# Start with Windows Server Core as the base image
+FROM mcr.microsoft.com/windows/servercore:ltsc2022 AS base
+
+# Set shell to PowerShell and copy necessary files in one layer
+SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
+COPY ["install-pwsh.ps1", "setup-environment.ps1", "Microsoft.PowerShell_profile.ps1", "C:/"]
+
+# Install PowerShell Core, run setup, and clean up in one layer
+RUN C:/install-pwsh.ps1; \
+    $env:PATH = [System.Environment]::GetEnvironmentVariable('PATH', 'Machine'); \
+    pwsh -Command "C:/setup-environment.ps1"; \
+    Remove-Item C:/install-pwsh.ps1, C:/setup-environment.ps1 -Force
+
+# Final stage
+FROM base AS final
+
+# Set PowerShell Core as the default shell
+SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
+
+# Set the default command
+CMD ["pwsh"]
