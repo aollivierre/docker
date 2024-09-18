@@ -89,6 +89,7 @@ Add-Step "Removing dangling images..." { Remove-DanglingImages }
 Add-Step "Keeping specified images..." { 
     $imagesToKeep = @(
         "mcr.microsoft.com/windows/servercore:ltsc2022"
+        "mcr.microsoft.com/powershell:windowsservercore-ltsc2022"
         # "my_pwsh_image_with_graphauth_20240705181637:latest"
     )
     Remove-AllImagesExcept -keepImageNames $imagesToKeep
