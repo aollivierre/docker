@@ -86,7 +86,8 @@ function runpsindocker {
     $scriptFileName = Split-Path -Leaf $localScriptPath
     $containerScriptPath = "C:\scripts\$scriptFileName"  # Path inside the container
 
-    $intuneDeployerPath = "C:\code\M365Fullv6-Timer2"  # Example folder to mount
+    # $intuneDeployerPath = "C:\code\M365Fullv6-Timer2"  # Example folder to mount
+    $intuneDeployerPath = "C:\code"  # Example folder to mount
     $modulesPath = "C:\Code\Modulesv2"                 # Example folder to mount
     $scriptBasePath = "C:\code"
     $modulesBasePath = "C:\code\modulesv2"
