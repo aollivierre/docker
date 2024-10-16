@@ -57,13 +57,21 @@
 
 
 
-
 function runpsindocker {
     param (
         [string]$localScriptPath  # The path to the local script to be passed
     )
 
+    # Check if C:\code\modulesv2 exists; if not, create it
+    $modulesBasePath = "C:\code\modulesv2"
+    if (-Not (Test-Path -Path $modulesBasePath)) {
+        New-Item -Path $modulesBasePath -ItemType Directory -Force
+        Write-Host "Directory $modulesBasePath created."
+    } else {
+        Write-Host "Directory $modulesBasePath already exists."
+    }
 
+    # Run the cleanup script
     & "$PSScriptroot\Helpers\1-CleanupDockerContainersImages.ps1"
     $exitCode = $LASTEXITCODE
     $exitCode
@@ -86,14 +94,13 @@ function runpsindocker {
     $scriptFileName = Split-Path -Leaf $localScriptPath
     $containerScriptPath = "C:\scripts\$scriptFileName"  # Path inside the container
 
-    # $intuneDeployerPath = "C:\code\M365Fullv6-Timer2"  # Example folder to mount
+    # Define the folder paths to mount
     $intuneDeployerPath = "C:\code"  # Example folder to mount
     $modulesPath = "C:\Code\Modulesv2"                 # Example folder to mount
     $scriptBasePath = "C:\code"
-    $modulesBasePath = "C:\code\modulesv2"
 
     # Define Docker image and container configuration
-    $imageName = "mcr.microsoft.com/windows/servercore:ltsc2022"  
+    $imageName = "mcr.microsoft.com/windows/servercore:ltsc2022"
     $containerName = "my_pwsh_container"
     $ps5path = "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
 
@@ -119,4 +126,3 @@ function runpsindocker {
     # Run the Docker command using Start-Process
     Start-Process @dockerParams
 }
-
