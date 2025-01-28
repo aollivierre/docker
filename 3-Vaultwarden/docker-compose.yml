@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: always
+    environment:
+      - WEBSOCKET_ENABLED=true
+    volumes:
+      - ./vw-data:/data
+    # Expose Vaultwarden on a different port if 80 is used by Nginx Proxy Manager
+    ports:
+      - "8080:80"
