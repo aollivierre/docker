@@ -7,8 +7,27 @@ services:
     restart: always
     environment:
       - WEBSOCKET_ENABLED=true
+      - DOMAIN=https://192.168.100.206
+      - ADMIN_TOKEN=vaultwarden123
     volumes:
       - ./vw-data:/data
-    # Expose Vaultwarden on a different port if 80 is used by Nginx Proxy Manager
+    networks:
+      - vaultwarden
+
+  nginx:
+    image: nginx:latest
+    container_name: vaultwarden_proxy
+    restart: always
     ports:
-      - "8080:80"
+      - "443:443"
+    volumes:
+      - ./nginx/vaultwarden.conf:/etc/nginx/conf.d/vaultwarden.conf:ro
+      - ./ssl:/ssl:ro
+    depends_on:
+      - vaultwarden
+    networks:
+      - vaultwarden
+
+networks:
+  vaultwarden:
+    driver: bridge
