@@ -4,7 +4,7 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v por
 
 
 
-# Yes, you can install Portainer without using WSL2. You can install and run Portainer directly on Docker for Windows, which works with Windows containers. Here’s how to do it:
+# Yes, you can install Portainer without using WSL2. You can install and run Portainer directly on Docker for Windows, which works with Windows containers. Here[U+2019]s how to do it:
 
 # ### Steps to Install Portainer on Docker for Windows
 
