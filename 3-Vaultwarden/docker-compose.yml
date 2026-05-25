@@ -8,7 +8,9 @@ services:
     environment:
       - WEBSOCKET_ENABLED=true
       - DOMAIN=https://192.168.100.206
-      - ADMIN_TOKEN=REDACTED-ADMIN-TOKEN
+      # Set ADMIN_TOKEN in 3-Vaultwarden/.env (see .env.example). Generate a
+      # strong value with:  openssl rand -base64 48
+      - ADMIN_TOKEN=${ADMIN_TOKEN:?set ADMIN_TOKEN in 3-Vaultwarden/.env}
     volumes:
       - ./vw-data:/data
     networks:

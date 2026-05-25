@@ -1,2 +1,17 @@
 # Claude Code per-machine settings (never share)
 .claude/settings.local.json
+
+# Secrets / local config (never commit; keep the *.example templates)
+.env
+**/.env
+*.tfvars
+!*.tfvars.example
+terraform/**/.terraform/
+terraform/**/*.tfstate
+terraform/**/*.tfstate.*
+
+# Vaultwarden runtime data
+3-Vaultwarden/vw-data/
+
+# UnicodeReplacementTool checkout (CI clones this at runtime)
+_urt/
