@@ -85,7 +85,8 @@ The docker-compose.yml file configures Vaultwarden with:
 https://192.168.100.206/admin
 ```
 
-2. Log in with the admin token: `vaultwarden123`
+2. Log in with the admin token (the `ADMIN_TOKEN` value you set in
+   `3-Vaultwarden/.env`; generate one with `openssl rand -base64 48`)
 
 3. From the admin panel, you can:
    - Monitor server status

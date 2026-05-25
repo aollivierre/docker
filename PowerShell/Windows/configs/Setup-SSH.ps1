@@ -92,7 +92,7 @@ $destination = "C:\"
 # Install-PowerShell -url $psUrl -destination $destination
 # Install-OpenSSH -url $sshUrl -destination $destination
 Configure-OpenSSH -configPath "C:\sshd_config" -bannerPath "C:\sshd_banner" -destination $destination
-# Create-User -username "ssh" -password "Passw0rd"
+# Create-User -username "ssh" -password "<password>"
 # Set-DefaultShell -shellPath "C:\PS7\pwsh.exe"
 
 
