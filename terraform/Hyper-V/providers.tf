@@ -8,8 +8,10 @@ terraform {
 }
 
 provider "hyperv" {
-  # Configuration options
-  #we need to define username and password in outside in secrets.json
-  username = "Administrator"
-  password = "REDACTED-PASSWORD"
+  # Configuration options.
+  # Credentials are supplied via variables (see variables.tf); set real
+  # values in a gitignored terraform.tfvars (see terraform.tfvars.example)
+  # or via TF_VAR_hyperv_username / TF_VAR_hyperv_password env vars.
+  username = var.hyperv_username
+  password = var.hyperv_password
 }
